@@ -14,7 +14,7 @@ programa
 
 		real alcool = capacidade * 0.7, gel = capacidade * 0.3
 
-		escreva ("Volume de álcool: ", alcool, "ml\nVolume de gel: ", gel, "\n\n")
+		escreva ("Volume de álcool: ", alcool, "ml\nVolume de gel: ", gel, "ml\n\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 484; 
+ * @POSICAO-CURSOR = 475; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
