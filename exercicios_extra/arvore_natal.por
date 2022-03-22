@@ -4,24 +4,32 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Desenhando árvore de Natal:\n\n")
+		inteiro altura, numero_de_espacos, numero_de_asteriscos = 1, espaco_tronco, linha_do_tronco = 3
+
+		escreva ("Digite a altura da árvore: ")
+			leia (altura)
+
+		numero_de_espacos = altura - 1
+		espaco_tronco = altura - 2 
+		
+		escreva("\nDesenhando árvore de Natal:\n\n")
 		u.aguarde(700)
 		limpa()
 
-		inteiro numero_de_espacos = 7, numero_de_asteriscos = 1, linha_do_tronco = 3
-
+		
 		faca 
 		{
 			espaco_vazio(numero_de_espacos)
 			desenhar_copa (numero_de_asteriscos)
 			numero_de_espacos -= 1
 			numero_de_asteriscos += 2 
+			altura -=1
 		}
-		enquanto (numero_de_espacos>=0 e numero_de_asteriscos <=15)
+		enquanto (altura > 0)
 
 		faca 
 		{
-			numero_de_espacos = 6
+			numero_de_espacos = espaco_tronco
 			espaco_vazio(numero_de_espacos)
 			desenhar_tronco ()
 			linha_do_tronco -= 1
@@ -60,7 +68,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 108; 
+ * @POSICAO-CURSOR = 174; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
